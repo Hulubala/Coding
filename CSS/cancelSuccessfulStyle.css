@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Public Sans';
+    src: url("../Font/PublicSans-VariableFont_wght.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Public Sans Italic';
+    src: url("../Font/PublicSans-Italic-VariableFont_wght.ttf") format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../Font/Inter-VariableFont_opsz\,wght.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Public Sans", "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    justify-content: center;
+}
+
+.headerContainer {
+    background-color: #D5FAFA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    font-family: "Public Sans";
+}
+
+header img {
+    height: 50px;
+}
+
+.topRightButtons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center; 
+    margin-right: 10px; 
+}
+
+.homeButton,
+.menuButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #3A3AB1;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 200px;
+    font-size: 12px;
+    box-shadow: none;
+    border: none; 
+    transition: background-color 0.3s ease, transform 0.2s ease;  
+}
+
+.profileImage img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.homeButton:hover,
+.menuButton:hover {
+    background-color: #27278A;
+    transform: scale(1.05);
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+.menuNav {
+    background-color: #0c20b3;
+    width: 300px;
+    height: 310px;
+    border-radius: 10px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+    max-width: 2000px;
+    position: absolute;
+    right: 20px;
+    z-index: 1000;
+}
+
+.menuBarHeader {
+    width: 270px;
+    margin-left: 20px ;
+}
+
+.menuBarHeader h3 {
+    color:#FFFFFF;
+    font-size: 25px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.menuBarList{
+    width: 200px;
+    margin: auto;
+}
+
+.menuBarList ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+  
+.menuBarList li {
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+.menuBarList a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.menuBarList a:hover {
+    color: #AFCBFF; 
+}
+
+.logOutContainer {
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 0 10px; 
+}
+
+.logOutContainer img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.logOutContainer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logOut:hover {
+    color: #AFCBFF; 
+}
+
+.hidden {
+    display: none;
+}
+
+main {
+    text-align: center;
+    padding: 0 20px 40px 20px;
+    font-family: "Public Sans";
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.content img {
+    width: 350px;
+    margin-bottom: 90px;
+}
+
+.cancelSuccessfulBox {
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px auto;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Public Sans'
+}
+
+.cancelSuccessfulBox .checkIcon {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.cancelSuccessfulBox h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cancelSuccessfulBox p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cancelSuccessfulBox a {
+    background-color: #3D4CBF;
+    color: #fff;
+    text-decoration: none;
+    width: 69px;
+    height: 36px;
+}
+
+.cancelSuccessfulBox .backButton {
+    background-color: #3D4CBF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancelSuccessfulBox a:hover {
+    background-color: #27278A;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cancelSuccessfulBox .backButton:hover {
+    background-color: #27278A;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+footer {
+    background-color: #312783;
+    color: #ffffff;
+    padding: 20px 10px;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footerColumn {
+    flex: 1;
+    margin: 0 20px;
+    text-align: left;
+    font-family: "Inter";
+}
+
+.footerColumn h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Inter"
+}
+
+.footerColumn p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.socialIcons a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.socialIcons img {
+    width: 32px;
+    height: 32px;
+}
+
+.footerBottom {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+    font-family: "Inter";
+}
+
+.footerContainer .footerColumn:not(:last-child) {
+    border-right: 2px solid #ffffff;
+}
